@@ -1,0 +1,22 @@
+{
+  "name": "forestry-cms-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aero deploy -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerobatic/forestry-cms-demo.git"
+  },
+  "author": "Aerobatic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aerobatic/forestry-cms-demo/issues"
+  },
+  "homepage": "https://forestry-cms-demo.aerobatic.io",
+  "devDependencies": {
+    "aerobatic-cli": "^1.0.35"
+  }
+}
