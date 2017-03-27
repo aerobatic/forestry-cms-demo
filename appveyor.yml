@@ -9,7 +9,7 @@ install:
 build_script:
   - npm install
   - mkdir themes
-  - git clone https://github.com/sethmacleod/aerial.git themes/aerial
+  - git clone https://github.com/beli3ver/hemingway2.git themes/hemingway2
   - C:/Hugo/hugo.exe --baseURL https://__baseurl__
 
 cache:
