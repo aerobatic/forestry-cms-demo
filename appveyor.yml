@@ -1,3 +1,11 @@
+# Appveyor doesn't run git with --recursive by default
+# https://github.com/appveyor/ci/issues/899#issuecomment-230364485
+clone_script:
+  - git clone -q --branch=%APPVEYOR_REPO_BRANCH% https://github.com/%APPVEYOR_REPO_NAME%.git %APPVEYOR_BUILD_FOLDER%
+  - cd %APPVEYOR_BUILD_FOLDER%
+  - git checkout -qf %APPVEYOR_REPO_COMMIT%
+  - git submodule update --init --recursive
+
 install:
   - mkdir C:\Hugo
   - appveyor DownloadFile "https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_windows-64bit.zip" -FileName C:\Hugo\hugo.zip
