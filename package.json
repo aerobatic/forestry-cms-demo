@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "aero deploy -d public"
+    "deploy": "aero deploy"
   },
   "repository": {
     "type": "git",
