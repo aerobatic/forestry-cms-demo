@@ -6,3 +6,10 @@ This is a demonstration of how to integrate the [Forestry CMS](https://forestry.
 
 * Live demo: https://forestry-cms-demo.aerobatic.io
 * [Appveyor build history](https://ci.appveyor.com/project/dvonlehman/forestry-cms-demo)
+
+
+# Setup Instructions
+
+* Clone this repo
+* If you want to use a different theme, add it as a git submodule.
+  `git submodule add https://github.com/beli3ver/hemingway2.git themes/hemingway2`
