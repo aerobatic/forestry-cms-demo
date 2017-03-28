@@ -9,6 +9,8 @@ install:
 build_script:
   - npm install
   - C:/Hugo/hugo.exe --baseURL https://__baseurl__
+  - ps: Get-ChildItem
+  - ps: Get-ChildItem -Path public
 
 cache:
   - node_modules  # local npm modules
