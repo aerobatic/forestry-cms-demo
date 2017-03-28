@@ -8,7 +8,6 @@ install:
 
 build_script:
   - npm install
-  - mkdir themes
   - C:/Hugo/hugo.exe --baseURL https://__baseurl__
 
 cache:
