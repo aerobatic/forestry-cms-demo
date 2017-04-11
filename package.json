@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "aero deploy"
+    "deploy": "aero deploy --directory public"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://forestry-cms-demo.aerobatic.io",
   "devDependencies": {
-    "aerobatic-cli": "^1.0.35"
+    "aerobatic-cli": "^1.0.37"
   }
 }

@@ -7,18 +7,16 @@ clone_script:
   - git submodule update --init --recursive
 
 install:
+  # Install Hugo
   - mkdir C:\Hugo
   - appveyor DownloadFile "https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_windows-64bit.zip" -FileName C:\Hugo\hugo.zip
   # https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.archive/Expand-Archive
   - ps: Expand-Archive C:\Hugo\hugo.zip -DestinationPath C:\Hugo
-  - ps: Get-ChildItem -Path C:\Hugo
   - ps: Move-Item "C:\Hugo\hugo_0.19_windows_amd64.exe" "C:\Hugo\hugo.exe"
 
 build_script:
   - npm install
   - C:/Hugo/hugo.exe --baseURL https://__baseurl__
-  - ps: Get-ChildItem
-  - ps: Get-ChildItem -Path public
 
 cache:
   - node_modules  # local npm modules
